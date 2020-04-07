@@ -1,0 +1,50 @@
+.head{
+    background-color: lightblue;
+}
+h1{
+    color: white;
+}
+
+h1:after{
+    float:right;
+    content: url(../icons/close.svg);
+}
+input{
+    width:100%;
+    height: 24px;
+}
+button{
+    width:100%;
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+    border-radius: 6px;
+}
+#or{
+    width:1px;
+    padding: 0 10px;
+    white-space: nowrap; 
+    font-weight:bold;
+    color:gray;
+
+}
+#epam{
+    background-color: lightgreen;
+}
+#signin{
+    background-color: lightblue;
+}
+#f{
+    background-color: midnightblue;	
+}
+#g{
+    background-color: crimson;
+}
+#mail{
+    background: url(../icons/email.svg) no-repeat ;
+    background-position: right;
+}
+#pass{
+    background: url(../icons/lock.svg) no-repeat ;
+    background-position: right;
+}
