@@ -10,3 +10,4 @@ function parallax(e){
 }
 
 document.addEventListener("mousemove", parallax);
+document.addEventListener("touchmove", parallax);
