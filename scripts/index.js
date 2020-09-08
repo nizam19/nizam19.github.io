@@ -1,4 +1,4 @@
-alert("Site still under development :)");
+
 function parallax(e){
     this.querySelectorAll('.layer').forEach(layer => {
         const speed = layer.getAttribute('data-speed'); 
