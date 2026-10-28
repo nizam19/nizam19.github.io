@@ -1,46 +1,514 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
-	<head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nizam Mohammed | Software Development Engineer</title>
+  <meta name="author" content="Nizam Mohammed">
+  <meta name="description" content="Personal portfolio of Nizam Mohammed, Software Development Engineer at Amazon specializing in backend microservices, full-stack web applications, and cloud architecture.">
+  <link rel="icon" href="icons/Alex-T-Fresh-Fruit-Orange.ico">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
 
-		<meta charset="utf-8">
-		<title>Nizam</title>
-		<link rel = "icon" href = "/icons/Alex-T-Fresh-Fruit-Orange.ico">
-		<meta name="author" content="Md Nizamuddin">
-		<meta name="description" content="My name is Md Nizamuddin. This is my personal website.">
-		<meta charset = "UTF-8">
-		<meta name = "robots" content = "index,follow">
-		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<body>
 
-	</head>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-name">Nizam Mohammed</span>
+        <span class="brand-title">SDE @ Amazon</span>
+      </a>
 
-	<body>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger"></span>
+      </button>
 
-		<header>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-			<h1>Nizam Mohammed</h1>
+  <!-- Main Content -->
+  <main>
 
-		</header>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">Software Development Engineer</div>
+          <h1 class="hero-title">Hi, I'm <span class="highlight">Nizam Mohammed</span></h1>
+          <p class="hero-subtitle">Building scalable microservices, full-stack web apps, and cloud architecture at Amazon.</p>
+          <p class="hero-description">
+            Passionate Software Engineer with expertise in backend design, multi-threaded microservices, full-stack React/TypeScript applications, and cloud automation on AWS.
+          </p>
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary">View Experience</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/nizam19" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://in.linkedin.com/in/nizam-md" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://hackerrank.com/officialnizam" target="_blank" rel="noopener noreferrer" aria-label="HackerRank Profile">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>HackerRank</span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCv36wt_h6BeS9KqbMKuCZIA" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<hr>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="about-card">
+          <p>
+            I am a <strong>Software Development Engineer at Amazon</strong> based in Hyderabad, India. With experience spanning backend systems, cloud engineering, data ingestion, and full-stack web applications, I specialize in building reliable, high-throughput applications using modern technologies like Java, Go, Python, TypeScript, React, and AWS.
+          </p>
+          <p>
+            Prior to my current role, I developed full-stack web applications at Epam, curated competitive coding challenges at Edyst (Y Combinator W19), and engineered cloud database migration tools at Virtusa. I hold a B.Tech in Computer Science & Engineering from MLR Institute of Technology.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Hyderabad, Telangana, India</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">💼</span>
+              <div>
+                <strong>Current Role</strong>
+                <p>SDE at Amazon</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🎓</span>
+              <div>
+                <strong>Education</strong>
+                <p>B.Tech in CS & Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<a href="https://psnprofiles.com/officialnizam"><img src="https://card.psnprofiles.com/2/officialnizam.png" border="0"></a>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+        <div class="timeline">
 
-		<footer>
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Development Engineer</h3>
+                  <h4 class="company-name">Amazon</h4>
+                </div>
+                <div class="timeline-date">October 2021 – Present | Hyderabad</div>
+              </div>
+              <ul class="experience-list">
+                <li>Contributed to diverse backend microservices using Go, TypeScript, and Python SDKs, and worked on large-scale full-stack web applications built on React and React Native.</li>
+                <li>Participated in Low Level and High Level System Designs and completed end-to-end implementation of multi-threaded backend microservices.</li>
+                <li>Executed cross-team integrations from upstream systems, consuming third-party RESTful APIs and delivering data for downstream business intelligence systems using batch processing.</li>
+                <li>Mitigated overall team operational burden using automated CloudWatch Alarms, Monitoring dashboards, logging, and comprehensive operational documentation.</li>
+                <li>Shipped robust production code backed by comprehensive Unit Tests, Integration Tests, and automated Functional Tests integrated into CI/CD pipelines.</li>
+                <li>Implemented scheduled bulk data pulling batch jobs using cron and event triggers running Docker containerized workloads on AWS.</li>
+                <li>Designed, developed, and maintained automated CI/CD deployment pipelines using Infrastructure-as-Code (AWS CDK) with approval workflows and fine-grained access management.</li>
+              </ul>
+            </div>
+          </div>
 
-			<p>
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Junior Software Engineer</h3>
+                  <h4 class="company-name">Epam Systems</h4>
+                </div>
+                <div class="timeline-date">May 2021 – October 2021 | Hyderabad</div>
+              </div>
+              <ul class="experience-list">
+                <li>Evolved a CLI application into a full-stack Spring & Hibernate web application; engineered REST APIs complete with documentation, test coverage, and cloud deployment.</li>
+                <li>Migrated a legacy Java frontend application to Angular with enhanced functionality, intuitive UI/UX, and Internationalization/Localization (i18n) support.</li>
+                <li>Adhered to Object-Oriented Programming (OOP) principles, Test Driven Development (TDD), clean code principles, design patterns, and software architecture best practices.</li>
+                <li>Won 1st Prize in Codenjoy (CodingDojo) Server Snake Game competition (a country-wide intern contest) for achieving the highest human score.</li>
+              </ul>
+            </div>
+          </div>
 
-				<a href="https://github.com/nizam19" title="GitHub">GitHub</a>
-				•
-				<a href="https://in.linkedin.com/in/nizam-md" title="LinkedIn">LinkedIn</a>
-				•
-				<a href="https://hackerrank.com/officialnizam" title="Hackerrank">HackerRank</a>
-				•
-				<a href="https://www.youtube.com/channel/UCv36wt_h6BeS9KqbMKuCZIA" title="Youtube">Youtube</a>
-			</p>
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Intern – Lead Mentor & Problem Setter</h3>
+                  <h4 class="company-name">Edyst (Y Combinator W19 Batch)</h4>
+                </div>
+                <div class="timeline-date">July 2020 – May 2021 | Hyderabad</div>
+              </div>
+              <ul class="experience-list">
+                <li>Authored and reviewed 100+ Data Structures & Algorithms problem statements and technical assessment challenges for corporate hiring rounds.</li>
+                <li>Engineered scripts and automated tooling for content formatting, test case generation, and language-specific execution time limit mechanisms.</li>
+                <li>Mentored 5,000+ students and hosted monthly coding challenge contests peaking at over 10,000 daily active participants for 4 consecutive months.</li>
+                <li>Led a team of six engineers managing platform operations, content validation, and daily learning activities.</li>
+              </ul>
+            </div>
+          </div>
 
-		</footer>
+          <!-- Job 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Cloud Intern</h3>
+                  <h4 class="company-name">Virtusa</h4>
+                </div>
+                <div class="timeline-date">May 2020 – July 2020 | Hyderabad</div>
+              </div>
+              <ul class="experience-list">
+                <li>Executed a database migration task, migrating data from legacy relational databases to AWS DynamoDB with automated S3 backup pipelines.</li>
+                <li>Gained hands-on expertise with key Amazon Web Services including EC2, S3, Kinesis, Lambda, API Gateway, VPC, IAM, Glue ETL, DynamoDB, SNS, and SQS.</li>
+              </ul>
+            </div>
+          </div>
 
-	</body>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Go</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">C / C++</span>
+              <span class="skill-tag">Rust</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              <h3>Cloud & AWS Infrastructure</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS CDK</span>
+              <span class="skill-tag">AWS SDK</span>
+              <span class="skill-tag">AWS Lambda</span>
+              <span class="skill-tag">ECS / Fargate</span>
+              <span class="skill-tag">DynamoDB</span>
+              <span class="skill-tag">S3 / Athena</span>
+              <span class="skill-tag">API Gateway</span>
+              <span class="skill-tag">Glue ETL</span>
+              <span class="skill-tag">Kinesis / SNS / SQS</span>
+              <span class="skill-tag">VPC / IAM</span>
+              <span class="skill-tag">CloudWatch</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <h3>Frameworks & Web</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Hibernate</span>
+              <span class="skill-tag">Node.js / Express</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">JUnit / Mockito</span>
+              <span class="skill-tag">Jest / Vitest</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              <h3>Tools & Concepts</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git / Version Control</span>
+              <span class="skill-tag">CI / CD Pipelines</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Data Structures & Algorithms</span>
+              <span class="skill-tag">System Design</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-type">Mobile App</div>
+              <h3 class="project-title">Feed – Food Waste Management App</h3>
+            </div>
+            <p class="project-description">
+              An Android application created to reduce food wastage by enabling users to upload details of surplus food (donor name, food quantity, location). Integrated Firebase for authentication & real-time database and Google Maps API for real-time donor location mapping.
+            </p>
+            <div class="project-tags">
+              <span>Android</span>
+              <span>Java</span>
+              <span>Firebase</span>
+              <span>Google Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nizam19" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-type">CLI Game</div>
+              <h3 class="project-title">Tic-Tac-Toe in Rust</h3>
+            </div>
+            <p class="project-description">
+              A command-line terminal game built in Rust featuring dynamic screen refreshes after each move. Awarded 1st Place in Learn Rust Hackathon for performance and clean Rust idioms.
+            </p>
+            <div class="project-tags">
+              <span>Rust</span>
+              <span>CLI</span>
+              <span>Game Logic</span>
+              <span>Hackathon 1st Place</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nizam19" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-type">Automation Tool</div>
+              <h3 class="project-title">Automated Assessment Selenium Script</h3>
+            </div>
+            <p class="project-description">
+              Automation engine written with Selenium WebDriver that authenticates user credentials, navigates online testing environments, and automates assessment workflows.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Selenium</span>
+              <span>Web Automation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nizam19" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-type">Academic Research</div>
+              <h3 class="project-title">Deep Learning & Speech Recognition</h3>
+            </div>
+            <p class="project-description">
+              Academic research projects and publications focused on <strong>Ultrasound Nerve Segmentation using Deep Learning</strong> neural architectures and <strong>Speech Emotion Recognition using Machine Learning</strong>.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Deep Learning</span>
+              <span>Machine Learning</span>
+              <span>Computer Vision</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title">Achievements & <span class="highlight">Certifications</span></h2>
+        <div class="achievements-grid">
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-content">
+              <h3>ACM-ICPC Regionalist</h3>
+              <p>2019-20 Amritapuri double-site regionalist and Asia West regionalist with Honourable Mention.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">⭐</div>
+            <div class="achievement-content">
+              <h3>HackerRank 6-Star</h3>
+              <p>6-Star rating in Problem Solving, 5 Gold badges, and Bronze medalist in competitive algorithms.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🚀</div>
+            <div class="achievement-content">
+              <h3>Google HashCode</h3>
+              <p>Scored 21,788,517 points in the Qualification round (top score threshold 27,203,691).</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">⚡</div>
+            <div class="achievement-content">
+              <h3>CodeChef 4-Star (Global Rank 9)</h3>
+              <p>Achieved 4-star rating (max rating 1997), Global Rank 9 in April Challenge 2021 Division 2, and CCDSAP Certified.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🥇</div>
+            <div class="achievement-content">
+              <h3>National Hackathons</h3>
+              <p>Top 300 participant among 200,000+ engineers in Infosys HackWithInfy (2020) and Global Rank 284 in TCS CodeVita Season 8.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">📜</div>
+            <div class="achievement-content">
+              <h3>Certifications</h3>
+              <p>CCDSAP Certified (CodeChef), Programming in Java (IIT Kharagpur NPTEL), and Python Certification (Coursera).</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Education Box -->
+        <div class="education-box">
+          <div class="education-header">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <div>
+              <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+              <p class="school">MLR Institute of Technology, Hyderabad, Telangana, India</p>
+            </div>
+          </div>
+          <div class="education-details">
+            <span class="badge">Graduated 2021</span>
+            <span class="badge">GPA: 8.22 / 10.0</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <p class="contact-subtitle">Feel free to reach out for collaborations, opportunities, or just a quick chat!</p>
+
+        <div class="contact-cards">
+          <a href="mailto:officialnizam@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">officialnizam@gmail.com</div>
+          </a>
+
+          <a href="tel:+918639028141" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+91 863 902 8141</div>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-label">Location</div>
+            <div class="contact-value">Hyderabad, Telangana, India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Nizam Mohammed. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/nizam19" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://in.linkedin.com/in/nizam-md" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://hackerrank.com/officialnizam" target="_blank" rel="noopener noreferrer">HackerRank</a>
+        <a href="https://www.youtube.com/channel/UCv36wt_h6BeS9KqbMKuCZIA" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
 
 </html>
